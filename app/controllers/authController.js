@@ -40,7 +40,7 @@ module.exports = {
         token: user.generateToken(),
       });
     } catch (err) {
-      return next(err);
+      return res.json({ err });
     }
   },
 };
